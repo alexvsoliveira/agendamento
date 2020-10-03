@@ -2,7 +2,19 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/.env" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Controllers/OfficesController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Livewire/Office/ListOffices.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Models/Offices.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2020_09_26_140309_create_offices_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2020_09_26_151522_create_opening_hours_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/office/form-office-days-operation.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/office/form-office.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/livewire/office/list-offices.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/offices/create.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/offices/index.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/offices/list-office.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/profile/show.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/routes/web.php" charset="UTF-8" />
   </component>
 </project>

@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d271c6cd-96bd-4ad8-a66d-4f84d34ba5dd" name="Default Changelist" comment="" />
+    <list default="true" id="d271c6cd-96bd-4ad8-a66d-4f84d34ba5dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-dropdown.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -134,6 +143,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1i34CxX6AE7Iq8OeOql1ai9MjZv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -141,10 +151,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/offices" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/livewire/office" />
+      <recent name="$PROJECT_DIR$/app/Http/Livewire/Office" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/offices" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -160,7 +179,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601122817966</updated>
-      <workItem from="1601122819073" duration="5403000" />
+      <workItem from="1601122819073" duration="15733000" />
+      <workItem from="1601717188113" duration="1919000" />
     </task>
     <servers />
   </component>
@@ -168,9 +188,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1100" y="479" width="399" height="156" key="NewPhpFileDialog" timestamp="1601138572164">
+      <screen x="50" y="27" width="2510" height="1053" />
+    </state>
+    <state x="1100" y="479" width="399" height="156" key="NewPhpFileDialog/50.27.2510.1053@50.27.2510.1053" timestamp="1601138572164" />
     <state x="794" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1601129077116">
       <screen x="50" y="27" width="2510" height="1053" />
     </state>
     <state x="794" y="188" width="1022" height="737" key="SettingsEditor/50.27.2510.1053@50.27.2510.1053" timestamp="1601129077116" />
+    <state x="969" y="252" key="run.anything.popup" timestamp="1601135413944">
+      <screen x="50" y="27" width="2510" height="1053" />
+    </state>
+    <state x="969" y="252" key="run.anything.popup/50.27.2510.1053@50.27.2510.1053" timestamp="1601135413944" />
+    <state x="968" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1601138306309">
+      <screen x="50" y="27" width="2510" height="1053" />
+    </state>
+    <state x="968" y="259" width="672" height="678" key="search.everywhere.popup/50.27.2510.1053@50.27.2510.1053" timestamp="1601138306309" />
   </component>
 </project>
