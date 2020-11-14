@@ -20,7 +20,10 @@ Route::get('/', function () {
 
 Route::get('/register-doctor', [User::class, 'index']);
 
+Route::middleware(['auth:sanctum', 'verified'])->resource('/doctor', \App\Http\Controllers\DoctorController::class);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
 Route::middleware(['auth:sanctum', 'verified'])->resource('/offices', \App\Http\Controllers\OfficesController::class);
