@@ -14,9 +14,8 @@ class OfficesController extends Controller
      */
     public function index()
     {
-        $data = Offices::all();
-        return view('offices.index', $data);
-
+        $offices = Offices::all();
+        return view('offices.index', ['offices' => $offices]);
     }
 
     /**
@@ -37,7 +36,10 @@ class OfficesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        unset($data['_token']);
+        $office = Offices::create($data);
+        return redirect('/offices');
     }
 
     /**

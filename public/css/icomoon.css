@@ -918,6 +918,9 @@
 .icon-code-fork:before {
   content: "\f126";
 }
+.icon-location:before {
+  content: "\e947";
+}
 .icon-chain-broken:before {
   content: "\f127";
 }

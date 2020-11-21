@@ -38,7 +38,7 @@
                     <h2 class="mb-4">Dados pessoais</h2>
                     <p>Campos com (*) são obrigatórios</p>
                 </div>
-                <form method="POST" action="{{ route('register') }}" class="appointment-form ftco-animate">
+                <form method="POST" action="{{ route('register') }}" class="appointment-form wow fadeIn">
                     @csrf
                     <div class="d-md-flex">
                         <div class="form-group">

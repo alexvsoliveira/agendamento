@@ -40,7 +40,7 @@
             {{__('State')}}
         </dt>
         <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-            <input id="state" placeholder="{{__("State")}}" type="text" name="city"
+            <input id="state" placeholder="{{__('State')}}" type="text" name="state"
                    class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"/>
             @error('state')
             <div class="alert alert-danger">{{ $message }}</div>
@@ -52,7 +52,7 @@
             {{__('City')}}
         </dt>
         <dd class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2">
-            <input id="city" placeholder="{{__("City")}}" type="text" name="city"
+            <input id="city" placeholder="{{__('City')}}" type="text" name="city"
                    class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5"/>
             @error('city')
             <div class="alert alert-danger">{{ $message }}</div>

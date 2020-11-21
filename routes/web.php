@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Schedulings;
 use App\Http\Controllers\User;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,12 @@ Route::get('/', function () {
 });
 
 Route::get('/register-doctor', [User::class, 'index']);
+Route::get('/doctor-agenda', [User::class, 'agenda'])->name('doctor-agenda');
+Route::post('/agenda/{user_id}', [User::class, 'storeAgenda'])->name('storeAgenda');
+Route::get('/consulta', [Schedulings::class, 'create']);
+Route::post('/create-consulta', [Schedulings::class, 'store']);
+Route::post('/get-scheduling-open', [Schedulings::class, 'getSchedulingOpen']);
+Route::get('/meus-agendamentos/{user_id}', [Schedulings::class, 'show']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

@@ -4,12 +4,13 @@
     <div class="container" id="formulario_doutor">
         <div class="row">
             <div class="col-md-12 py-5 pr-md-5">
-                <div class="heading-section heading-section-white ftco-animate mb-5">
+                <div class="heading-section heading-section-white wow fadeIn mb-5">
                     <span class="subheading">Cadastro de Profissionais</span>
                     <h2 class="mb-4">Dados pessoais</h2>
                     <p>Campos com (*) são obrigatórios</p>
                 </div>
-                <form method="POST" action="{{ route('register') }}" class="appointment-form ftco-animate">
+
+                <form method="POST" action="{{ route('register') }}" class="appointment-form wow fadeIn">
                     @csrf
                     <div class="d-md-flex">
                         <div class="form-group">
@@ -65,7 +66,7 @@
                             </div>
                         </div>
                         <div class="form-group ml-md-4">
-                            <input type="text"name="phone" class="form-control" placeholder="Telefone*">
+                            <input type="text" name="phone" class="form-control" placeholder="Telefone*">
                         </div>
                     </div>
 
@@ -86,7 +87,7 @@
 
                     <div class="d-md-flex">
 
-                    <div class="form-group">
+                        <div class="form-group">
                             <input type="text" class="form-control" name="cidade" placeholder="Cidade*">
                         </div>
 
@@ -108,7 +109,6 @@
                     </div>
                 </form>
             </div>
-
         </div>
     </div>
 </section>

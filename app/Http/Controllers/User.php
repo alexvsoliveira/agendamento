@@ -2,11 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Offices;
+use App\Models\OpperationHours;
 use App\Models\Specials;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use PHPUnit\Framework\Constraint\Operator;
 
 class User extends Controller
 {
+    CONST MEDICO = 1;
+    CONST PACIENTE = 2;
     /**
      * Display a listing of the resource.
      *
@@ -23,9 +29,11 @@ class User extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function agenda()
     {
-        return view('offices.create');
+        $hours = OpperationHours::where('user_id', Auth::user()->id)->get();
+        $offices = Offices::all();
+        return view('user.agenda-doctor', ['offices' => $offices, 'hours' => $hours]);
     }
 
     /**
@@ -34,8 +42,22 @@ class User extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function storeAgenda($user_id, Request $request)
     {
+        foreach ($request->input('weekday') as $key => $day) {
+            if (!isset($request->input('off')[$key])) {
+                OpperationHours::create([
+                    'start' => $request->input('hours_start')[$key] . ':00',
+                    'end' => $request->input('hours_end')[$key] . ':00',
+                    'full_open' => 0,
+                    'holiday' => 0,
+                    'weekday' => $day,
+                    'user_id' => $user_id,
+                    'office_id' => $request->input('doutor_localidade'),
+                ]);
+            }
+        }
+        return redirect('/dashboard');
         //
     }
 
